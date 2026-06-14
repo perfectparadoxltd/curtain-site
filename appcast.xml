@@ -3,6 +3,19 @@
     <channel>
         <title>Curtain</title>
         <item>
+            <title>0.1.2</title>
+            <pubDate>Sun, 14 Jun 2026 22:47:57 +0100</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>0.1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://curtain.perfectparadox.co.uk/Curtain-0.1.2.zip" length="7174631" type="application/octet-stream" sparkle:edSignature="KEi1bMFLf6zLBFDy42w4JOCb8V+dz5KHubJqeLP2sEFc736DYiYuF9YPw+BQK8ewB5/FdJficF9H03smaCX/DA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://curtain.perfectparadox.co.uk/Curtain3-2.delta" sparkle:deltaFrom="2" length="48166" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="5QjcX0uE62qERG7Ne4B2yW7R6KDOEW6H/4q4rS8FUxa7+b0+Iz22lGDR/aqFXveh+XxMydqHHrl5CV41OaE0DA=="/>
+                <enclosure url="https://curtain.perfectparadox.co.uk/Curtain3-1.delta" sparkle:deltaFrom="1" length="79574" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="eiNfBCV2LhCfLIAerRMpEpEilgOGjBOmoHSN0hGEN4iDUVJ84thc5Hm0xPT+chBhWT34cPOE1tG5AnqTcNrHDQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.1</title>
             <pubDate>Sun, 14 Jun 2026 15:46:14 +0100</pubDate>
             <sparkle:version>2</sparkle:version>
