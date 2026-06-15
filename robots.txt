@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://curtain.perfectparadox.co.uk/sitemap.xml
