@@ -3,13 +3,13 @@
     <channel>
         <title>Curtain</title>
         <item>
-            <title>0.1.3</title>
-            <pubDate>Thu, 18 Jun 2026 01:25:21 +0100</pubDate>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>0.1.3</sparkle:shortVersionString>
+            <title>0.1.4</title>
+            <pubDate>Sun, 21 Jun 2026 23:44:12 +0100</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>0.1.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://curtain.perfectparadox.co.uk/Curtain-0.1.3.zip" length="7181051" type="application/octet-stream" sparkle:edSignature="CO/3+8su9B9M4oHyKTT09h1XZxBvwV+Nw2+Hi7Uv/Amg38EN+HeZ377JNBuFq0fSjI3IJKI3DikrsbRXnZbgBg=="/>
+            <enclosure url="https://curtain.perfectparadox.co.uk/Curtain-0.1.4.zip" length="7209222" type="application/octet-stream" sparkle:edSignature="68Br/K9+F36n4pYjSxkdMXTKRXEp46R/ZuDK2AVDwEjzxCyuacehlaXvTOJuINRTukkIVotFW0JTBSMfe+ymAQ=="/>
         </item>
     </channel>
 </rss>
