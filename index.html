@@ -3,9 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Curtain — Auto Do-Not-Disturb the moment you share your screen</title>
-<meta name="description" content="Auto Do-Not-Disturb the moment you share your screen — notifications silenced, then restored. One-time $9.99, on-device, zero telemetry. macOS 14+.">
+<title data-i18n="meta.title">Curtain — Auto Do-Not-Disturb the moment you share your screen</title>
+<meta name="description" data-i18n-attr="content:meta.description" content="Auto Do-Not-Disturb the moment you share your screen — notifications silenced, then restored. One-time $9.99, on-device, zero telemetry. macOS 14+.">
 <link rel="canonical" href="https://curtain.perfectparadox.co.uk/">
+<link rel="alternate" hreflang="en" href="https://curtain.perfectparadox.co.uk/?lang=en">
+<link rel="alternate" hreflang="es" href="https://curtain.perfectparadox.co.uk/?lang=es">
+<link rel="alternate" hreflang="fr" href="https://curtain.perfectparadox.co.uk/?lang=fr">
+<link rel="alternate" hreflang="de" href="https://curtain.perfectparadox.co.uk/?lang=de">
+<link rel="alternate" hreflang="it" href="https://curtain.perfectparadox.co.uk/?lang=it">
+<link rel="alternate" hreflang="pt" href="https://curtain.perfectparadox.co.uk/?lang=pt">
+<link rel="alternate" hreflang="ja" href="https://curtain.perfectparadox.co.uk/?lang=ja">
+<link rel="alternate" hreflang="zh-Hans" href="https://curtain.perfectparadox.co.uk/?lang=zh-Hans">
+<link rel="alternate" hreflang="x-default" href="https://curtain.perfectparadox.co.uk/">
 <meta property="og:title" content="Curtain — Auto Do-Not-Disturb when you share your screen">
 <meta property="og:description" content="Detects every screen-share via the system privacy signal — no intrusive permissions required. One-time $9.99, on-device, zero telemetry.">
 <meta property="og:type" content="website">
@@ -126,6 +135,12 @@ details.faq-item p{padding:0 0 26px;margin:0;color:#cbc7bf;font-size:16px;line-h
 .d-tag{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);margin-left:10px}
 .d-bell{font-size:20px;animation:silence 3.4s ease-in-out infinite}
 @keyframes silence{0%,30%{opacity:1;transform:translateY(0)}45%,100%{opacity:.18;transform:translateY(6px)}}
+/* language picker (i18n) */
+.i18n-picker{display:flex;align-items:center;gap:7px}
+.i18n-picker .i18n-globe{font-size:13px;opacity:.7;line-height:1}
+.i18n-picker select{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:6px;padding:7px 28px 7px 10px;cursor:pointer;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%238c8a86' stroke-width='1.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;transition:.18s}
+.i18n-picker select:hover{color:var(--ink);border-color:var(--crimson2)}
+.i18n-picker select option{background:#0d0d0e;color:var(--ink);text-transform:none}
 </style>
 <script defer data-domain="curtain.perfectparadox.co.uk" src="https://analytics.dchv.co.uk/js/script.js"></script>
 </head>
@@ -140,106 +155,231 @@ details.faq-item p{padding:0 0 26px;margin:0;color:#cbc7bf;font-size:16px;line-h
 
 <nav>
   <div class="brand">PERFECT&nbsp;PARADOX</div>
-  <div class="links"><a href="#features">Features</a><a href="#buy">Buy</a><a href="/legal/privacy.html">Privacy</a></div>
+  <div class="links"><a href="#features" data-i18n="nav.features">Features</a><a href="#buy" data-i18n="nav.buy">Buy</a><a href="/legal/privacy.html" data-i18n="nav.privacy">Privacy</a></div>
 </nav>
 
-<div id="stickybuy"><div class="sb-l"><b>Curtain</b> <span>&mdash; auto do-not-disturb when you share</span></div><button class="btn primary" onclick="openCheckout()" style="padding:12px 26px">Buy &middot; $9.99</button></div>
+<div id="stickybuy"><div class="sb-l"><b>Curtain</b> <span data-i18n="sticky.tagline">&mdash; auto do-not-disturb when you share</span></div><button class="btn primary" onclick="openCheckout()" style="padding:12px 26px" data-i18n="sticky.buy">Buy &middot; $9.99</button></div>
 <div class="page">
 <section class="hero">
   <div class="veil"></div>
   <div class="inner">
-    <div class="kicker">Auto Do-Not-Disturb · On-device · No subscription</div>
+    <div class="kicker" data-i18n="hero.kicker">Auto Do-Not-Disturb · On-device · No subscription</div>
     <h1>CUR<span class="stroke">TAIN</span></h1>
-    <p class="sub">The moment you share your screen, Curtain draws closed — notifications silenced automatically, restored when you stop.</p>
+    <p class="sub" data-i18n="hero.sub">The moment you share your screen, Curtain draws closed — notifications silenced automatically, restored when you stop.</p>
     <div class="cta-row">
-      <a href="https://curtain.perfectparadox.co.uk/Curtain.zip" class="btn primary">Download trial →</a>
-      <button class="btn" onclick="openCheckout()">Buy · $9.99</button>
-      <span class="price-tag">ONE-TIME · 14-DAY TRIAL</span>
+      <a href="https://curtain.perfectparadox.co.uk/Curtain.zip" class="btn primary" data-i18n="hero.download">Download trial →</a>
+      <button class="btn" onclick="openCheckout()" data-i18n="hero.buy">Buy · $9.99</button>
+      <span class="price-tag" data-i18n="hero.terms">ONE-TIME · 14-DAY TRIAL</span>
     </div>
   </div>
 </section>
 
-<div class="marquee"><div>AUTO DO-NOT-DISTURB&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRY</b>&nbsp;&nbsp;·&nbsp;&nbsp;DETECTS EVERY SHARE&nbsp;&nbsp;·&nbsp;&nbsp;<b>ONE-TIME PURCHASE</b>&nbsp;&nbsp;·&nbsp;&nbsp;AUTO DO-NOT-DISTURB&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRY</b>&nbsp;&nbsp;·&nbsp;&nbsp;DETECTS EVERY SHARE&nbsp;&nbsp;·&nbsp;&nbsp;<b>ONE-TIME PURCHASE</b>&nbsp;&nbsp;·&nbsp;&nbsp;</div></div>
+<div class="marquee"><div data-i18n="marquee.html">AUTO DO-NOT-DISTURB&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRY</b>&nbsp;&nbsp;·&nbsp;&nbsp;DETECTS EVERY SHARE&nbsp;&nbsp;·&nbsp;&nbsp;<b>ONE-TIME PURCHASE</b>&nbsp;&nbsp;·&nbsp;&nbsp;AUTO DO-NOT-DISTURB&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRY</b>&nbsp;&nbsp;·&nbsp;&nbsp;DETECTS EVERY SHARE&nbsp;&nbsp;·&nbsp;&nbsp;<b>ONE-TIME PURCHASE</b>&nbsp;&nbsp;·&nbsp;&nbsp;</div></div>
 
 
-<section class="how"><div style="max-width:1100px;margin:0 auto"><div class="sec-label">// How it works</div></div><div class="how-wrap">
-<div class="step"><div class="sn">1</div><h4>Install,<br>no permissions</h4><p>Drop Curtain in Applications and you're done. It reads the system's own privacy signal to know when you share — no intrusive Screen Recording permission required.</p></div>
-<div class="step"><div class="sn">2</div><h4>Share<br>anywhere</h4><p>Present in Zoom, Google Meet, Teams, Slack huddles or QuickTime. Curtain notices the instant any app captures your screen.</p></div>
-<div class="step"><div class="sn">3</div><h4>It silences,<br>then restores</h4><p>Do Not Disturb switches on automatically. Stop sharing and everything snaps back — plus a quick recap of what you missed.</p></div>
+<section class="how"><div style="max-width:1100px;margin:0 auto"><div class="sec-label" data-i18n="how.label">// How it works</div></div><div class="how-wrap">
+<div class="step"><div class="sn">1</div><h4 data-i18n="how.1.title">Install,<br>no permissions</h4><p data-i18n="how.1.body">Drop Curtain in Applications and you're done. It reads the system's own privacy signal to know when you share — no intrusive Screen Recording permission required.</p></div>
+<div class="step"><div class="sn">2</div><h4 data-i18n="how.2.title">Share<br>anywhere</h4><p data-i18n="how.2.body">Present in Zoom, Google Meet, Teams, Slack huddles or QuickTime. Curtain notices the instant any app captures your screen.</p></div>
+<div class="step"><div class="sn">3</div><h4 data-i18n="how.3.title">It silences,<br>then restores</h4><p data-i18n="how.3.body">Do Not Disturb switches on automatically. Stop sharing and everything snaps back — plus a quick recap of what you missed.</p></div>
 </div></section>
 <section class="appshow" style="padding:120px 56px;background:rgba(10,10,11,.82)">
   <div style="max-width:760px;margin:0 auto">
-    <div class="sec-label">// See it work</div>
+    <div class="sec-label" data-i18n="see.label">// See it work</div>
     <div style="background:#1c1c1e;border:0.5px solid rgba(255,255,255,.12);border-radius:12px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6);font-family:-apple-system,system-ui,sans-serif;max-width:380px;margin:0 auto">
       <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;background:#2a2a2c;border-bottom:0.5px solid rgba(255,255,255,.08)">
         <span style="font-size:13px;color:#e9e9ea;font-weight:600;display:flex;align-items:center;gap:7px"><span style="width:13px;height:16px;display:inline-block;background:#e0392b;border-radius:2px 2px 4px 4px"></span>Curtain</span>
-        <span style="font-size:11px;color:#8c8a86">menu bar</span>
+        <span style="font-size:11px;color:#8c8a86" data-i18n="see.menubar">menu bar</span>
       </div>
       <div style="padding:20px 18px;text-align:center;border-bottom:0.5px solid rgba(255,255,255,.07)">
-        <div style="font-size:17px;color:#f4f1ea;font-weight:700;display:flex;align-items:center;justify-content:center;gap:9px"><span style="width:11px;height:11px;border-radius:50%;background:#e0392b;box-shadow:0 0 10px rgba(224,57,43,.8)"></span>ON AIR</div>
-        <div style="font-size:13px;color:#ff5a3c;margin-top:6px">Your screen is being shared</div>
+        <div style="font-size:17px;color:#f4f1ea;font-weight:700;display:flex;align-items:center;justify-content:center;gap:9px"><span style="width:11px;height:11px;border-radius:50%;background:#e0392b;box-shadow:0 0 10px rgba(224,57,43,.8)"></span><span data-i18n="see.onair">ON AIR</span></div>
+        <div style="font-size:13px;color:#ff5a3c;margin-top:6px" data-i18n="see.sharing">Your screen is being shared</div>
       </div>
       <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:0.5px solid rgba(255,255,255,.06)">
-        <span style="font-size:14px;color:#f4f1ea">Protect automatically</span>
+        <span style="font-size:14px;color:#f4f1ea" data-i18n="see.protect">Protect automatically</span>
         <span style="width:38px;height:22px;border-radius:11px;background:#e0392b;position:relative;display:inline-block"><span style="position:absolute;top:2px;right:2px;width:18px;height:18px;border-radius:50%;background:#fff"></span></span>
       </div>
       <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:0.5px solid rgba(255,255,255,.06)">
-        <span style="font-size:14px;color:#f4f1ea">Do Not Disturb</span>
-        <span style="font-size:13px;color:#ff5a3c;font-weight:600">ON</span>
+        <span style="font-size:14px;color:#f4f1ea" data-i18n="see.dnd">Do Not Disturb</span>
+        <span style="font-size:13px;color:#ff5a3c;font-weight:600" data-i18n="see.dnd.on">ON</span>
       </div>
       <div style="padding:14px 18px;border-bottom:0.5px solid rgba(255,255,255,.06)">
-        <div style="background:#e0392b;color:#fff;border-radius:8px;padding:11px;font-size:13px;font-weight:600;text-align:center">Stop protecting</div>
+        <div style="background:#e0392b;color:#fff;border-radius:8px;padding:11px;font-size:13px;font-weight:600;text-align:center" data-i18n="see.stop">Stop protecting</div>
       </div>
       <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 18px;background:#161617;font-size:12px;color:#8c8a86">
-        <span>Last session</span><span style="color:#cbc7bf">23 min · screen capture</span>
+        <span data-i18n="see.lastsession">Last session</span><span style="color:#cbc7bf" data-i18n="see.lastsession.val">23 min · screen capture</span>
       </div>
       <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 18px;background:#161617;border-top:0.5px solid rgba(255,255,255,.07);font-size:11px;color:#6e6c69">
-        <span>On-device · No telemetry</span><span>⌘⇧P to toggle</span>
+        <span data-i18n="see.foot.l">On-device · No telemetry</span><span data-i18n="see.foot.r">⌘⇧P to toggle</span>
       </div>
     </div>
   </div>
 </section>
 
-<section class="feat" id="features"><div class="feat-inner"><div class="sec-label">// What it does</div><div class="grid">
-<div class="cell"><div class="demo"><div class="d-row"><span class="d-tag" style="margin:0">Detecting share</span><span class="d-bar"><i></i></span><span class="d-chk">&#128308;</span></div></div><div class="n">01</div><div><h3>One signal,<br>every share</h3><p>Curtain watches the same privacy indicator macOS lights up for Zoom, Meet, Teams, QuickTime, iPhone Mirroring and native recording. One system signal covers them all &mdash; no app list to fall out of date.</p></div></div>
-<div class="cell"><div class="demo"><span class="d-shield">&#128272;</span><span class="d-tag">No permission needed</span></div><div class="n">02</div><div><h3>No intrusive<br>permissions</h3><p>Curtain spots the moment screen-sharing begins without ever asking for Screen Recording access. It only sees window metadata, never the contents of your screen. (Grant the optional permission and it adds extra precision plus camera and mic detection.)</p></div></div>
-<div class="cell"><div class="demo"><span class="d-bell">&#128276;</span><span class="d-tag">Do Not Disturb · ON</span></div><div class="n">03</div><div><h3>Silences,<br>then restores</h3><p>Do Not Disturb flips on the instant you share and turns off again the moment you stop. No notification ever sneaks onto the stream &mdash; and if Curtain ever quits or crashes mid-session, it reverts Do Not Disturb on its own the next time it opens, so you're never left stuck.</p></div></div>
-<div class="cell"><div class="demo"><div class="d-menubar"><span class="d-shield" style="font-size:13px">&#128276;</span><span class="d-badge">3</span></div><div class="d-tag">23 min · 3 silenced</div></div><div class="n">04</div><div><h3>Honest,<br>on your Mac</h3><p>Curtain only ever says &ldquo;protected&rdquo; once it has actually switched Do Not Disturb on &mdash; no false comfort. Everything runs on-device: no account, no telemetry, no diagnostics. One-time purchase.</p></div></div>
+<section class="feat" id="features"><div class="feat-inner"><div class="sec-label" data-i18n="feat.label">// What it does</div><div class="grid">
+<div class="cell"><div class="demo"><div class="d-row"><span class="d-tag" style="margin:0" data-i18n="feat.demo.detecting">Detecting share</span><span class="d-bar"><i></i></span><span class="d-chk">&#128308;</span></div></div><div class="n">01</div><div><h3 data-i18n="feat.1.title">One signal,<br>every share</h3><p data-i18n="feat.1.body">Curtain watches the same privacy indicator macOS lights up for Zoom, Meet, Teams, QuickTime, iPhone Mirroring and native recording. One system signal covers them all &mdash; no app list to fall out of date.</p></div></div>
+<div class="cell"><div class="demo"><span class="d-shield">&#128272;</span><span class="d-tag" data-i18n="feat.demo.noperm">No permission needed</span></div><div class="n">02</div><div><h3 data-i18n="feat.2.title">No intrusive<br>permissions</h3><p data-i18n="feat.2.body">Curtain spots the moment screen-sharing begins without ever asking for Screen Recording access. It only sees window metadata, never the contents of your screen. (Grant the optional permission and it adds extra precision plus camera and mic detection.)</p></div></div>
+<div class="cell"><div class="demo"><span class="d-bell">&#128276;</span><span class="d-tag" data-i18n="feat.demo.dnd">Do Not Disturb · ON</span></div><div class="n">03</div><div><h3 data-i18n="feat.3.title">Silences,<br>then restores</h3><p data-i18n="feat.3.body">Do Not Disturb flips on the instant you share and turns off again the moment you stop. No notification ever sneaks onto the stream &mdash; and if Curtain ever quits or crashes mid-session, it reverts Do Not Disturb on its own the next time it opens, so you're never left stuck.</p></div></div>
+<div class="cell"><div class="demo"><div class="d-menubar"><span class="d-shield" style="font-size:13px">&#128276;</span><span class="d-badge">3</span></div><div class="d-tag" data-i18n="feat.demo.recap">23 min · 3 silenced</div></div><div class="n">04</div><div><h3 data-i18n="feat.4.title">Honest,<br>on your Mac</h3><p data-i18n="feat.4.body">Curtain only ever says &ldquo;protected&rdquo; once it has actually switched Do Not Disturb on &mdash; no false comfort. Everything runs on-device: no account, no telemetry, no diagnostics. One-time purchase.</p></div></div>
 </div></div></section>
 
-<section class="cmp"><div class="cmp-wrap"><div class="sec-label">// How it compares</div>
+<section class="cmp"><div class="cmp-wrap"><div class="sec-label" data-i18n="cmp.label">// How it compares</div>
 <table><thead><tr><th></th><th class="us">Curtain</th><th>Muzzle</th><th>Stealthly</th></tr></thead><tbody>
-<tr><td>Detects every share via the system signal &mdash; no permission needed</td><td class="us yes">&#10003;</td><td><span class="no">~ flaky</span></td><td class="yes">&#10003;</td></tr>
-<tr><td>Restores your Do Not Disturb as it was</td><td class="us yes">&#10003;</td><td><span class="no">&#10007;</span></td><td class="yes">&#10003;</td></tr>
-<tr><td>Post-call recap of what came in</td><td class="us yes">&#10003;</td><td><span class="no">&#10007;</span></td><td><span class="no">&#10007;</span></td></tr>
-<tr><td>On-device, zero telemetry (no asterisks)</td><td class="us yes">&#10003;</td><td class="yes">&#10003;</td><td><span class="no">~ diagnostics</span></td></tr>
-<tr><td>One-time purchase (no subscription)</td><td class="us yes">&#10003;</td><td class="yes">free</td><td class="yes">&#10003;</td></tr>
-<tr><td>Actively maintained in 2026</td><td class="us yes">&#10003;</td><td><span class="no">abandoned 2021</span></td><td class="yes">&#10003;</td></tr>
+<tr><td data-i18n="cmp.row.detect">Detects every share via the system signal &mdash; no permission needed</td><td class="us yes">&#10003;</td><td><span class="no" data-i18n="cmp.val.flaky">~ flaky</span></td><td class="yes">&#10003;</td></tr>
+<tr><td data-i18n="cmp.row.restore">Restores your Do Not Disturb as it was</td><td class="us yes">&#10003;</td><td><span class="no">&#10007;</span></td><td class="yes">&#10003;</td></tr>
+<tr><td data-i18n="cmp.row.recap">Post-call recap of what came in</td><td class="us yes">&#10003;</td><td><span class="no">&#10007;</span></td><td><span class="no">&#10007;</span></td></tr>
+<tr><td data-i18n="cmp.row.ondevice">On-device, zero telemetry (no asterisks)</td><td class="us yes">&#10003;</td><td class="yes">&#10003;</td><td><span class="no" data-i18n="cmp.val.diagnostics">~ diagnostics</span></td></tr>
+<tr><td data-i18n="cmp.row.onetime">One-time purchase (no subscription)</td><td class="us yes">&#10003;</td><td class="yes" data-i18n="cmp.val.free">free</td><td class="yes">&#10003;</td></tr>
+<tr><td data-i18n="cmp.row.maintained">Actively maintained in 2026</td><td class="us yes">&#10003;</td><td><span class="no" data-i18n="cmp.val.abandoned">abandoned 2021</span></td><td class="yes">&#10003;</td></tr>
 </tbody></table></div></section>
 <section class="price" id="buy">
-  <div class="sec-label" style="text-align:center">// One price. Forever.</div>
+  <div class="sec-label" style="text-align:center" data-i18n="price.label">// One price. Forever.</div>
   <div class="big">CURTAIN <span class="amt">$9.99</span></div>
-  <div class="terms">One-time purchase · 14-day trial · Works on every Mac you own</div>
-  <button class="btn primary" onclick="openCheckout()">Buy Curtain →</button>
+  <div class="terms" data-i18n="price.terms">One-time purchase · 14-day trial · Works on every Mac you own</div>
+  <button class="btn primary" onclick="openCheckout()" data-i18n="price.buy">Buy Curtain →</button>
 </section>
 
-<section class="faq"><div class="faq-wrap"><div class="sec-label">// Questions</div>
-<details class="faq-item"><summary>Does Curtain need Screen Recording permission?</summary><p>No — it's optional. Curtain detects the moment screen-sharing begins straight from the system's privacy signal, without you ever granting Screen Recording access. It only sees window metadata, never the contents of your screen. If you do grant the optional permission, it simply adds extra precision plus camera and microphone detection — but Curtain works fully without it.</p></details>
-<details class="faq-item"><summary>How does it detect screen sharing?</summary><p>Curtain watches the same privacy indicator macOS itself lights up whenever your screen is captured — the one that switches on for Zoom, Meet, Teams, QuickTime, iPhone Mirroring and native recording. Because it reads that one universal system signal rather than a hard-coded list of apps, it can't fall out of date, and it never needs to look at what's actually on your screen.</p></details>
-<details class="faq-item"><summary>Does it work with Zoom, Meet and Teams?</summary><p>Yes — and Slack huddles, QuickTime, iPhone Mirroring and anything else that captures the screen. Because Curtain watches the system-wide privacy signal instead of specific apps, it doesn't matter which tool you present from.</p></details>
-<details class="faq-item"><summary>Does it detect screen recording too?</summary><p>It does. Recording lights up the same system indicator as sharing, so Curtain protects you whenever your screen is being captured — live call or local recording alike.</p></details>
-<details class="faq-item"><summary>Is it a subscription?</summary><p>No. One-time purchase, yours forever. You get free updates within the same major version (all of 1.x). The whole point is no recurring fees for a tool that just sits quietly in your menu bar.</p></details>
-<details class="faq-item"><summary>How many Macs can I use it on?</summary><p>Up to 2 Macs you own, with a single license. Enter the key on each and you're set.</p></details>
-<details class="faq-item"><summary>What about my privacy?</summary><p>Everything runs on your Mac. Curtain reads only window metadata to know when capture starts — never the contents of your screen or your notifications. No account, no telemetry, no anonymous diagnostics, no network calls beyond the licence check and updates. 100% on-device, with no asterisks.</p></details>
-<details class="faq-item"><summary>Which macOS do I need?</summary><p>macOS 14 Sonoma or later, on both Apple Silicon and Intel Macs.</p></details>
-<details class="faq-item"><summary>Can I get a refund?</summary><p>Absolutely — a 14-day money-back guarantee, no questions asked. Payments are handled by Paddle; just reply to your receipt and we'll sort it out.</p></details>
+<section class="faq"><div class="faq-wrap"><div class="sec-label" data-i18n="faq.label">// Questions</div>
+<details class="faq-item"><summary data-i18n="faq.1.q">Does Curtain need Screen Recording permission?</summary><p data-i18n="faq.1.a">No — it's optional. Curtain detects the moment screen-sharing begins straight from the system's privacy signal, without you ever granting Screen Recording access. It only sees window metadata, never the contents of your screen. If you do grant the optional permission, it simply adds extra precision plus camera and microphone detection — but Curtain works fully without it.</p></details>
+<details class="faq-item"><summary data-i18n="faq.2.q">How does it detect screen sharing?</summary><p data-i18n="faq.2.a">Curtain watches the same privacy indicator macOS itself lights up whenever your screen is captured — the one that switches on for Zoom, Meet, Teams, QuickTime, iPhone Mirroring and native recording. Because it reads that one universal system signal rather than a hard-coded list of apps, it can't fall out of date, and it never needs to look at what's actually on your screen.</p></details>
+<details class="faq-item"><summary data-i18n="faq.3.q">Does it work with Zoom, Meet and Teams?</summary><p data-i18n="faq.3.a">Yes — and Slack huddles, QuickTime, iPhone Mirroring and anything else that captures the screen. Because Curtain watches the system-wide privacy signal instead of specific apps, it doesn't matter which tool you present from.</p></details>
+<details class="faq-item"><summary data-i18n="faq.4.q">Does it detect screen recording too?</summary><p data-i18n="faq.4.a">It does. Recording lights up the same system indicator as sharing, so Curtain protects you whenever your screen is being captured — live call or local recording alike.</p></details>
+<details class="faq-item"><summary data-i18n="faq.5.q">Is it a subscription?</summary><p data-i18n="faq.5.a">No. One-time purchase, yours forever. You get free updates within the same major version (all of 1.x). The whole point is no recurring fees for a tool that just sits quietly in your menu bar.</p></details>
+<details class="faq-item"><summary data-i18n="faq.6.q">How many Macs can I use it on?</summary><p data-i18n="faq.6.a">Up to 2 Macs you own, with a single license. Enter the key on each and you're set.</p></details>
+<details class="faq-item"><summary data-i18n="faq.7.q">What about my privacy?</summary><p data-i18n="faq.7.a">Everything runs on your Mac. Curtain reads only window metadata to know when capture starts — never the contents of your screen or your notifications. No account, no telemetry, no anonymous diagnostics, no network calls beyond the licence check and updates. 100% on-device, with no asterisks.</p></details>
+<details class="faq-item"><summary data-i18n="faq.8.q">Which macOS do I need?</summary><p data-i18n="faq.8.a">macOS 14 Sonoma or later, on both Apple Silicon and Intel Macs.</p></details>
+<details class="faq-item"><summary data-i18n="faq.9.q">Can I get a refund?</summary><p data-i18n="faq.9.a">Absolutely — a 14-day money-back guarantee, no questions asked. Payments are handled by Paddle; just reply to your receipt and we'll sort it out.</p></details>
 </div></section>
-<section class="more" style="padding:100px 0;background:rgba(10,10,11,.95);border-top:1px solid var(--line);overflow:hidden"><div style="max-width:1000px;margin:0 auto 40px;padding:0 56px"><div class="sec-label" style="margin-bottom:0">// More from Perfect Paradox</div></div><style>@keyframes ppmarq{from{transform:translateX(0)}to{transform:translateX(-50%)}}.ppcar:hover .pptrack{animation-play-state:paused}</style><div class="ppcar" style="width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)"><div class="pptrack" style="display:flex;gap:16px;width:max-content;animation:ppmarq 55s linear infinite"><a href="https://notebound.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/notebound.png" alt="Notebound" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Notebound</div><div style="font-size:12px;color:var(--muted);text-align:center">Markdown to Apple Notes</div></a><a href="https://everyfile.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/everyfile.png" alt="Everyfile" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Everyfile</div><div style="font-size:12px;color:var(--muted);text-align:center">Instant file search</div></a><a href="https://screenshelf.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/screenshelf.png" alt="Screenshelf" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Screenshelf</div><div style="font-size:12px;color:var(--muted);text-align:center">Search inside screenshots</div></a><a href="https://evergreen.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/evergreen.png" alt="Evergreen" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Evergreen</div><div style="font-size:12px;color:var(--muted);text-align:center">Every app up to date</div></a><a href="https://slimr.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/slimr.png" alt="Slimr" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Slimr</div><div style="font-size:12px;color:var(--muted);text-align:center">Compress, OCR & PDF tools</div></a><a href="https://castly.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/castly.png" alt="Castly" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Castly</div><div style="font-size:12px;color:var(--muted);text-align:center">Transform text as you paste</div></a><a href="https://lightcap.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/lightcap.png" alt="Lightcap" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Lightcap</div><div style="font-size:12px;color:var(--muted);text-align:center">10-second screen GIFs</div></a><a href="https://scrubd.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/scrubd.png" alt="Scrubd" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Scrubd</div><div style="font-size:12px;color:var(--muted);text-align:center">Clean metadata before you share</div></a><a href="https://notebound.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/notebound.png" alt="Notebound" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Notebound</div><div style="font-size:12px;color:var(--muted);text-align:center">Markdown to Apple Notes</div></a><a href="https://everyfile.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/everyfile.png" alt="Everyfile" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Everyfile</div><div style="font-size:12px;color:var(--muted);text-align:center">Instant file search</div></a><a href="https://screenshelf.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/screenshelf.png" alt="Screenshelf" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Screenshelf</div><div style="font-size:12px;color:var(--muted);text-align:center">Search inside screenshots</div></a><a href="https://evergreen.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/evergreen.png" alt="Evergreen" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Evergreen</div><div style="font-size:12px;color:var(--muted);text-align:center">Every app up to date</div></a><a href="https://slimr.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/slimr.png" alt="Slimr" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Slimr</div><div style="font-size:12px;color:var(--muted);text-align:center">Compress, OCR & PDF tools</div></a><a href="https://castly.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/castly.png" alt="Castly" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Castly</div><div style="font-size:12px;color:var(--muted);text-align:center">Transform text as you paste</div></a><a href="https://lightcap.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/lightcap.png" alt="Lightcap" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Lightcap</div><div style="font-size:12px;color:var(--muted);text-align:center">10-second screen GIFs</div></a><a href="https://scrubd.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/scrubd.png" alt="Scrubd" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Scrubd</div><div style="font-size:12px;color:var(--muted);text-align:center">Clean metadata before you share</div></a></div></div></section>
+<section class="more" style="padding:100px 0;background:rgba(10,10,11,.95);border-top:1px solid var(--line);overflow:hidden"><div style="max-width:1000px;margin:0 auto 40px;padding:0 56px"><div class="sec-label" style="margin-bottom:0" data-i18n="more.label">// More from Perfect Paradox</div></div><style>@keyframes ppmarq{from{transform:translateX(0)}to{transform:translateX(-50%)}}.ppcar:hover .pptrack{animation-play-state:paused}</style><div class="ppcar" style="width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)"><div class="pptrack" style="display:flex;gap:16px;width:max-content;animation:ppmarq 55s linear infinite"><a href="https://notebound.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/notebound.png" alt="Notebound" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Notebound</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.notebound">Markdown to Apple Notes</div></a><a href="https://everyfile.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/everyfile.png" alt="Everyfile" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Everyfile</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.everyfile">Instant file search</div></a><a href="https://screenshelf.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/screenshelf.png" alt="Screenshelf" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Screenshelf</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.screenshelf">Search inside screenshots</div></a><a href="https://evergreen.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/evergreen.png" alt="Evergreen" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Evergreen</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.evergreen">Every app up to date</div></a><a href="https://slimr.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/slimr.png" alt="Slimr" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Slimr</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.slimr">Compress, OCR & PDF tools</div></a><a href="https://castly.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/castly.png" alt="Castly" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Castly</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.castly">Transform text as you paste</div></a><a href="https://lightcap.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/lightcap.png" alt="Lightcap" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Lightcap</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.lightcap">10-second screen GIFs</div></a><a href="https://scrubd.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/scrubd.png" alt="Scrubd" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Scrubd</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.scrubd">Clean metadata before you share</div></a><a href="https://notebound.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/notebound.png" alt="Notebound" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Notebound</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.notebound">Markdown to Apple Notes</div></a><a href="https://everyfile.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/everyfile.png" alt="Everyfile" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Everyfile</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.everyfile">Instant file search</div></a><a href="https://screenshelf.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/screenshelf.png" alt="Screenshelf" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Screenshelf</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.screenshelf">Search inside screenshots</div></a><a href="https://evergreen.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/evergreen.png" alt="Evergreen" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Evergreen</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.evergreen">Every app up to date</div></a><a href="https://slimr.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/slimr.png" alt="Slimr" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Slimr</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.slimr">Compress, OCR & PDF tools</div></a><a href="https://castly.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/castly.png" alt="Castly" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Castly</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.castly">Transform text as you paste</div></a><a href="https://lightcap.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/lightcap.png" alt="Lightcap" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Lightcap</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.lightcap">10-second screen GIFs</div></a><a href="https://scrubd.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/scrubd.png" alt="Scrubd" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Scrubd</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.scrubd">Clean metadata before you share</div></a></div></div></section>
 <footer>
-  <div>© 2026 Perfect Paradox Ltd · NI739317</div>
-  <div><a href="/legal/privacy.html">Privacy</a> · <a href="/legal/terms.html">Terms</a> · <a href="/legal/refund.html">Refund</a> · <a href="/legal/eula.html">EULA</a> · <a href="mailto:info@perfectparadox.co.uk">info@perfectparadox.co.uk</a></div>
+  <div data-i18n="footer.copy">© 2026 Perfect Paradox Ltd · NI739317</div>
+  <div><a href="/legal/privacy.html" data-i18n="footer.privacy">Privacy</a> · <a href="/legal/terms.html" data-i18n="footer.terms">Terms</a> · <a href="/legal/refund.html" data-i18n="footer.refund">Refund</a> · <a href="/legal/eula.html" data-i18n="footer.eula">EULA</a> · <a href="mailto:info@perfectparadox.co.uk">info@perfectparadox.co.uk</a></div>
+  <div class="i18n-picker">
+    <label for="langSelect" class="i18n-globe" aria-hidden="true">&#127760;</label>
+    <select id="langSelect" aria-label="Language / Idioma"></select>
+  </div>
 </footer>
 </div>
+
+<!-- i18n: motor multiidioma client-side (NO toca Paddle ni precios). Patrón reutilizable de castly-site. -->
+<script src="translations.js"></script>
+<script>
+(function () {
+  var I18N = window.I18N || {};
+  var LANGS = I18N.__langs || { en: "English" };
+  var SUPPORTED = Object.keys(LANGS);
+  var DEFAULT = "en";
+  var STORE_KEY = "curtain_lang";
+
+  function normalize(code) {
+    if (!code) return null;
+    code = code.trim();
+    if (SUPPORTED.indexOf(code) !== -1) return code;          // match exacto (incl. zh-Hans)
+    var lower = code.toLowerCase();
+    // chino → zh-Hans (simplificado) por defecto
+    if (lower.indexOf("zh") === 0) return SUPPORTED.indexOf("zh-Hans") !== -1 ? "zh-Hans" : null;
+    var base = lower.split("-")[0];                            // "es-419" → "es"
+    for (var i = 0; i < SUPPORTED.length; i++) {
+      if (SUPPORTED[i].toLowerCase() === base || SUPPORTED[i].toLowerCase().split("-")[0] === base) {
+        return SUPPORTED[i];
+      }
+    }
+    return null;
+  }
+
+  function detect() {
+    try {
+      var qs = new URLSearchParams(window.location.search).get("lang");
+      var fromUrl = normalize(qs);
+      if (fromUrl) return fromUrl;
+    } catch (e) {}
+    try {
+      var saved = normalize(localStorage.getItem(STORE_KEY));
+      if (saved) return saved;
+    } catch (e) {}
+    var navs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
+    for (var i = 0; i < navs.length; i++) {
+      var n = normalize(navs[i]);
+      if (n) return n;
+    }
+    return DEFAULT;
+  }
+
+  function apply(lang) {
+    var dict = I18N[lang] || I18N[DEFAULT] || {};
+    var fallback = I18N[DEFAULT] || {};
+    function val(key) { return (dict[key] != null) ? dict[key] : fallback[key]; }
+
+    // 1) contenido de texto (permite HTML inline: <br>, <code>, <span>, →, etc.)
+    var nodes = document.querySelectorAll("[data-i18n]");
+    for (var i = 0; i < nodes.length; i++) {
+      var k = nodes[i].getAttribute("data-i18n");
+      var v = val(k);
+      if (v != null) nodes[i].innerHTML = v;
+    }
+    // 2) atributos (content/placeholder/aria-...) → data-i18n-attr="attr:clave[,attr2:clave2]"
+    var attrNodes = document.querySelectorAll("[data-i18n-attr]");
+    for (var j = 0; j < attrNodes.length; j++) {
+      var spec = attrNodes[j].getAttribute("data-i18n-attr");
+      var pairs = spec.split(",");
+      for (var p = 0; p < pairs.length; p++) {
+        var parts = pairs[p].split(":");
+        if (parts.length === 2) {
+          var av = val(parts[1].trim());
+          if (av != null) attrNodes[j].setAttribute(parts[0].trim(), av.replace(/&amp;/g, "&"));
+        }
+      }
+    }
+    // 3) <html lang>
+    document.documentElement.setAttribute("lang", lang);
+  }
+
+  function persist(lang) {
+    try { localStorage.setItem(STORE_KEY, lang); } catch (e) {}
+  }
+
+  function syncUrl(lang) {
+    try {
+      var url = new URL(window.location.href);
+      url.searchParams.set("lang", lang);
+      history.replaceState(null, "", url.toString());
+    } catch (e) {}
+  }
+
+  function buildSelector(current) {
+    var sel = document.getElementById("langSelect");
+    if (!sel) return;
+    sel.innerHTML = "";
+    for (var i = 0; i < SUPPORTED.length; i++) {
+      var code = SUPPORTED[i];
+      var opt = document.createElement("option");
+      opt.value = code;
+      opt.textContent = LANGS[code];
+      if (code === current) opt.selected = true;
+      sel.appendChild(opt);
+    }
+    sel.addEventListener("change", function () {
+      var lang = sel.value;
+      apply(lang);
+      persist(lang);
+      syncUrl(lang);
+    });
+  }
+
+  function init() {
+    var lang = detect();
+    apply(lang);
+    persist(lang);
+    syncUrl(lang);
+    buildSelector(lang);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+</script>
 
 <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
 <script>
