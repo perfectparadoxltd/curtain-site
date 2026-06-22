@@ -26,6 +26,15 @@ window.I18N = {
 
   /* ===================================================================== EN */
   en: {
+    "news.label": "// What's new",
+    "news.latest": "Latest",
+    "news.014.1": "Curtain now speaks 8 languages and follows your Mac — the whole interface, plus the dynamic on-screen text, localized out of the box.",
+    "news.013.1": "Fixed a case where toggling protection off mid-call could leave you stuck in Do Not Disturb — Curtain now always restores whatever it switched on.",
+    "news.013.2": "Trial status and the licence prompt now stay accurate while the app runs for days at a time.",
+    "news.012.1": "Curtain now detects screen sharing even without the Screen Recording permission — protection works the moment you install it.",
+    "news.012.2": "Faster detection when a share begins, and the global hotkey now tells you if another app already claimed it.",
+    "news.011.1": "A sturdier 14-day trial that survives restarts and clock changes, plus a round of security hardening.",
+    "news.010.1": "Initial release — automatic Do Not Disturb the moment you share your screen, a menu-bar app, a global hotkey and a recap of each session.",
     "hero.langs": "8 languages",
     "marquee.5": "8 LANGUAGES",
     "langs.label": "// Speaks your language",
@@ -157,6 +166,15 @@ window.I18N = {
 
   /* ===================================================================== ES */
   es: {
+    "news.label": "// Novedades",
+    "news.latest": "Última",
+    "news.014.1": "Curtain ya habla 8 idiomas y sigue al de tu Mac: toda la interfaz, además del texto dinámico en pantalla, traducido desde el primer momento.",
+    "news.013.1": "Corregido un caso en el que apagar la protección a mitad de llamada podía dejarte atrapado en No molestar; ahora Curtain siempre restaura lo que activó.",
+    "news.013.2": "El estado de la prueba y el aviso de licencia se mantienen exactos aunque la app lleve días abierta.",
+    "news.012.1": "Curtain ahora detecta cuando compartes pantalla incluso sin el permiso de Grabación de pantalla: protege desde el momento en que lo instalas.",
+    "news.012.2": "Detección más rápida al empezar a compartir, y el atajo global ahora te avisa si otra app ya lo está usando.",
+    "news.011.1": "Una prueba de 14 días más robusta que resiste reinicios y cambios de reloj, además de una ronda de refuerzo de seguridad.",
+    "news.010.1": "Versión inicial: No molestar automático en cuanto compartes pantalla, app en la barra de menús, atajo global y un resumen de cada sesión.",
     "hero.langs": "8 idiomas",
     "marquee.5": "8 IDIOMAS",
     "langs.label": "// Habla tu idioma",
@@ -288,6 +306,15 @@ window.I18N = {
 
   /* ===================================================================== FR */
   fr: {
+    "news.label": "// Nouveautés",
+    "news.latest": "Récent",
+    "news.014.1": "Curtain parle désormais 8 langues et suit celle de votre Mac : toute l'interface, ainsi que le texte dynamique à l'écran, traduits dès le départ.",
+    "news.013.1": "Correction d'un cas où désactiver la protection en pleine réunion pouvait vous laisser bloqué en Ne pas déranger — Curtain rétablit désormais toujours ce qu'il a activé.",
+    "news.013.2": "L'état de l'essai et l'invite de licence restent exacts même si l'app tourne plusieurs jours d'affilée.",
+    "news.012.1": "Curtain détecte maintenant le partage d'écran même sans l'autorisation Enregistrement de l'écran — la protection marche dès l'installation.",
+    "news.012.2": "Détection plus rapide au début d'un partage, et le raccourci global vous prévient si une autre app l'utilise déjà.",
+    "news.011.1": "Un essai de 14 jours plus robuste qui résiste aux redémarrages et aux changements d'horloge, avec un renforcement de la sécurité.",
+    "news.010.1": "Version initiale — Ne pas déranger automatique dès que vous partagez votre écran, une app dans la barre des menus, un raccourci global et un récapitulatif de chaque session.",
     "hero.langs": "8 langues",
     "marquee.5": "8 LANGUES",
     "langs.label": "// Parle votre langue",
@@ -419,6 +446,15 @@ window.I18N = {
 
   /* ===================================================================== DE */
   de: {
+    "news.label": "// Neuigkeiten",
+    "news.latest": "Neu",
+    "news.014.1": "Curtain spricht jetzt 8 Sprachen und folgt der deines Macs — die gesamte Oberfläche samt dynamischem Text auf dem Bildschirm, von Anfang an übersetzt.",
+    "news.013.1": "Ein Fall behoben, in dem das Abschalten des Schutzes mitten im Anruf dich in „Nicht stören“ feststecken lassen konnte — Curtain stellt jetzt immer wieder her, was es eingeschaltet hat.",
+    "news.013.2": "Teststatus und Lizenzhinweis bleiben auch dann korrekt, wenn die App tagelang läuft.",
+    "news.012.1": "Curtain erkennt Bildschirmfreigaben jetzt auch ohne die Bildschirmaufnahme-Berechtigung — Schutz funktioniert ab der Installation.",
+    "news.012.2": "Schnellere Erkennung beim Start einer Freigabe, und der globale Kurzbefehl meldet jetzt, wenn ihn bereits eine andere App belegt.",
+    "news.011.1": "Eine robustere 14-Tage-Testphase, die Neustarts und Uhrumstellungen übersteht, plus eine Runde Sicherheitshärtung.",
+    "news.010.1": "Erstveröffentlichung — automatisch „Nicht stören“, sobald du deinen Bildschirm teilst, eine Menüleisten-App, ein globaler Kurzbefehl und eine Zusammenfassung jeder Sitzung.",
     "hero.langs": "8 Sprachen",
     "marquee.5": "8 SPRACHEN",
     "langs.label": "// Spricht deine Sprache",
@@ -550,6 +586,15 @@ window.I18N = {
 
   /* ===================================================================== IT */
   it: {
+    "news.label": "// Novità",
+    "news.latest": "Ultima",
+    "news.014.1": "Curtain ora parla 8 lingue e segue quella del tuo Mac: tutta l'interfaccia, oltre al testo dinamico a schermo, tradotti fin da subito.",
+    "news.013.1": "Corretto un caso in cui disattivare la protezione durante una chiamata poteva lasciarti bloccato in Non disturbare — ora Curtain ripristina sempre ciò che ha attivato.",
+    "news.013.2": "Lo stato della prova e l'avviso di licenza restano accurati anche se l'app resta aperta per giorni.",
+    "news.012.1": "Curtain ora rileva la condivisione dello schermo anche senza il permesso di Registrazione schermo: la protezione funziona dal momento dell'installazione.",
+    "news.012.2": "Rilevamento più rapido all'inizio di una condivisione, e la scorciatoia globale ora ti avvisa se un'altra app la sta già usando.",
+    "news.011.1": "Una prova di 14 giorni più solida che resiste a riavvii e cambi d'orologio, più un giro di rafforzamento della sicurezza.",
+    "news.010.1": "Versione iniziale — Non disturbare automatico nel momento in cui condividi lo schermo, un'app nella barra dei menu, una scorciatoia globale e un riepilogo di ogni sessione.",
     "hero.langs": "8 lingue",
     "marquee.5": "8 LINGUE",
     "langs.label": "// Parla la tua lingua",
@@ -681,6 +726,15 @@ window.I18N = {
 
   /* ===================================================================== PT */
   pt: {
+    "news.label": "// Novidades",
+    "news.latest": "Recente",
+    "news.014.1": "O Curtain agora fala 8 idiomas e segue o do seu Mac: toda a interface, além do texto dinâmico no ecrã, traduzidos desde o início.",
+    "news.013.1": "Corrigido um caso em que desligar a proteção a meio de uma chamada podia deixá-lo preso em Não incomodar — o Curtain agora restaura sempre o que ativou.",
+    "news.013.2": "O estado da avaliação e o aviso de licença mantêm-se exatos mesmo com a app aberta durante dias.",
+    "news.012.1": "O Curtain agora deteta a partilha de ecrã mesmo sem a permissão de Gravação de ecrã — a proteção funciona assim que o instala.",
+    "news.012.2": "Deteção mais rápida ao iniciar uma partilha, e o atalho global agora avisa se outra app já o está a usar.",
+    "news.011.1": "Uma avaliação de 14 dias mais robusta, que resiste a reinícios e mudanças de relógio, além de uma ronda de reforço de segurança.",
+    "news.010.1": "Versão inicial — Não incomodar automático no momento em que partilha o ecrã, uma app na barra de menus, um atalho global e um resumo de cada sessão.",
     "hero.langs": "8 idiomas",
     "marquee.5": "8 IDIOMAS",
     "langs.label": "// Fala a sua língua",
@@ -812,6 +866,15 @@ window.I18N = {
 
   /* ===================================================================== JA */
   ja: {
+    "news.label": "// 新着情報",
+    "news.latest": "最新",
+    "news.014.1": "Curtain が 8 言語に対応し、Mac の言語に追従するように。インターフェイス全体に加え、画面上の動的なテキストも最初から翻訳されます。",
+    "news.013.1": "通話中に保護をオフにすると「集中モード」から抜け出せなくなる場合があった問題を修正。Curtain は自分でオンにしたものを必ず元に戻すようになりました。",
+    "news.013.2": "アプリを何日も起動したままでも、トライアルの状態とライセンスの案内が正確に保たれます。",
+    "news.012.1": "Curtain は画面収録の権限がなくても画面共有を検出できるようになりました。インストールした瞬間から保護が働きます。",
+    "news.012.2": "共有開始時の検出がより高速に。さらにグローバルショートカットは、他のアプリが既に使用している場合に知らせてくれます。",
+    "news.011.1": "再起動や時計の変更にも耐える、より堅牢な 14 日間トライアル。あわせてセキュリティを強化しました。",
+    "news.010.1": "初回リリース — 画面を共有した瞬間に自動で「集中モード」、メニューバーアプリ、グローバルショートカット、各セッションの振り返り。",
     "hero.langs": "8言語",
     "marquee.5": "8言語対応",
     "langs.label": "// あなたの言語で",
@@ -943,6 +1006,15 @@ window.I18N = {
 
   /* ================================================================ zh-Hans */
   "zh-Hans": {
+    "news.label": "// 新功能",
+    "news.latest": "最新",
+    "news.014.1": "Curtain 现已支持 8 种语言，并跟随你的 Mac——整个界面以及屏幕上的动态文字开箱即用地完成本地化。",
+    "news.013.1": "修复了通话途中关闭保护可能让你卡在「专注模式」的问题——Curtain 现在总会还原它开启过的设置。",
+    "news.013.2": "即便应用连续运行数天，试用状态和许可证提示也能保持准确。",
+    "news.012.1": "Curtain 现在即使没有「屏幕录制」权限也能检测到屏幕共享——安装后立即生效保护。",
+    "news.012.2": "开始共享时的检测更快，全局快捷键现在会在被其他应用占用时提醒你。",
+    "news.011.1": "更稳健的 14 天试用，可经受重启和时钟更改，并进行了一轮安全加固。",
+    "news.010.1": "首个版本——在你共享屏幕的瞬间自动开启「专注模式」，菜单栏应用、全局快捷键，以及每次会话的回顾。",
     "hero.langs": "8 种语言",
     "marquee.5": "8 种语言",
     "langs.label": "// 说你的语言",
