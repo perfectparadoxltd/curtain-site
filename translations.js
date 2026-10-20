@@ -26,6 +26,7 @@ window.I18N = {
 
   /* ===================================================================== EN */
   en: {
+    "news.015.1": "Security update: the built-in updater moves to Sparkle 2.9.6, which fixes issues published by its developers. No other changes.",
     "news.label": "// What's new",
     "news.latest": "Latest",
     "news.014.1": "Curtain now speaks 8 languages and follows your Mac — the whole interface, plus the dynamic on-screen text, localized out of the box.",
@@ -167,6 +168,7 @@ window.I18N = {
 
   /* ===================================================================== ES */
   es: {
+    "news.015.1": "Actualización de seguridad: el actualizador integrado pasa a Sparkle 2.9.6, que corrige fallos publicados por sus desarrolladores. Sin más cambios.",
     "news.label": "// Novedades",
     "news.latest": "Última",
     "news.014.1": "Curtain ya habla 8 idiomas y sigue al de tu Mac: toda la interfaz, además del texto dinámico en pantalla, traducido desde el primer momento.",
@@ -308,6 +310,7 @@ window.I18N = {
 
   /* ===================================================================== FR */
   fr: {
+    "news.015.1": "Mise à jour de sécurité : le système de mise à jour intégré passe à Sparkle 2.9.6, qui corrige des problèmes publiés par ses développeurs. Aucun autre changement.",
     "news.label": "// Nouveautés",
     "news.latest": "Récent",
     "news.014.1": "Curtain parle désormais 8 langues et suit celle de votre Mac : toute l'interface, ainsi que le texte dynamique à l'écran, traduits dès le départ.",
@@ -449,6 +452,7 @@ window.I18N = {
 
   /* ===================================================================== DE */
   de: {
+    "news.015.1": "Sicherheitsupdate: Die integrierte Update-Funktion wechselt auf Sparkle 2.9.6, das von den Entwicklern veröffentlichte Probleme behebt. Keine weiteren Änderungen.",
     "news.label": "// Neuigkeiten",
     "news.latest": "Neu",
     "news.014.1": "Curtain spricht jetzt 8 Sprachen und folgt der deines Macs — die gesamte Oberfläche samt dynamischem Text auf dem Bildschirm, von Anfang an übersetzt.",
@@ -590,6 +594,7 @@ window.I18N = {
 
   /* ===================================================================== IT */
   it: {
+    "news.015.1": "Aggiornamento di sicurezza: il sistema di aggiornamento integrato passa a Sparkle 2.9.6, che corregge problemi pubblicati dai suoi sviluppatori. Nessun'altra modifica.",
     "news.label": "// Novità",
     "news.latest": "Ultima",
     "news.014.1": "Curtain ora parla 8 lingue e segue quella del tuo Mac: tutta l'interfaccia, oltre al testo dinamico a schermo, tradotti fin da subito.",
@@ -731,6 +736,7 @@ window.I18N = {
 
   /* ===================================================================== PT */
   pt: {
+    "news.015.1": "Atualização de segurança: o atualizador integrado passa para o Sparkle 2.9.6, que corrige problemas publicados pelos seus programadores. Sem outras alterações.",
     "news.label": "// Novidades",
     "news.latest": "Recente",
     "news.014.1": "O Curtain agora fala 8 idiomas e segue o do seu Mac: toda a interface, além do texto dinâmico no ecrã, traduzidos desde o início.",
@@ -872,6 +878,7 @@ window.I18N = {
 
   /* ===================================================================== JA */
   ja: {
+    "news.015.1": "セキュリティアップデート：内蔵のアップデーターを Sparkle 2.9.6 に更新しました。開発元が公表した問題が修正されています。その他の変更はありません。",
     "news.label": "// 新着情報",
     "news.latest": "最新",
     "news.014.1": "Curtain が 8 言語に対応し、Mac の言語に追従するように。インターフェイス全体に加え、画面上の動的なテキストも最初から翻訳されます。",
@@ -1013,6 +1020,7 @@ window.I18N = {
 
   /* ================================================================ zh-Hans */
   "zh-Hans": {
+    "news.015.1": "安全更新：内置更新程序升级到 Sparkle 2.9.6，修复了其开发者公布的问题。无其他改动。",
     "news.label": "// 新功能",
     "news.latest": "最新",
     "news.014.1": "Curtain 现已支持 8 种语言，并跟随你的 Mac——整个界面以及屏幕上的动态文字开箱即用地完成本地化。",
